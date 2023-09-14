@@ -219,10 +219,10 @@ button.shake{
     background-size: cover;
     background-position: center;
     position: absolute;
-    width: calc(100% - 107px);
-    height: 257px;
+    width: calc(100vw - 107px);
+    height:  calc(100vw - 107px);
     animation: float 2s ease-in-out infinite;
-    left: calc(50% - ((100% - 100px)/2));
+    left: calc(50% - ((100vw - 100px)/2));
     top: 11vh;
     border-radius: 100%;
   }
@@ -237,6 +237,7 @@ button.shake{
   @media(max-width: 750px){
     .foto{
       top: 3vh;
+
     }
   }
 
