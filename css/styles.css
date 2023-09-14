@@ -215,8 +215,12 @@ button.shake{
   }
 
   .foto{
+    background-image: url('../assets/foto.jpg');
+    background-size: cover;
+    background-position: center;
     position: absolute;
     width: calc(100% - 107px);
+    height: 298px;
     animation: float 2s ease-in-out infinite;
     left: calc(50% - ((100% - 100px)/2));
     top: 11vh;
@@ -232,7 +236,7 @@ button.shake{
 
   @media(max-width: 750px){
     .foto{
-      top: 6vh;
+      top: 5.5vh;
     }
   }
 
