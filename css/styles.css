@@ -20,7 +20,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-image: url('../assets/vector-grunge-background.jpg')
+    background-image: url('../assets/bg.jpg')
 }
 .container{
     justify-content: center;
@@ -79,7 +79,7 @@ color: salmon;
 }
 
 video{
-    width: auto;
+    width: 100%;
     height: 70vh;
 }
 
@@ -220,7 +220,7 @@ button.shake{
     background-position: center;
     position: absolute;
     width: calc(100% - 107px);
-    height: 298px;
+    height: 257px;
     animation: float 2s ease-in-out infinite;
     left: calc(50% - ((100% - 100px)/2));
     top: 11vh;
@@ -236,7 +236,7 @@ button.shake{
 
   @media(max-width: 750px){
     .foto{
-      top: 5.5vh;
+      top: 3vh;
     }
   }
 
@@ -251,7 +251,7 @@ button.shake{
   width: 0px;
 }
 .itinerario{
-  height:1416px;
+  height:1516px;
   width: 100%;
   background-image: url('../assets/itinerario.png');
   background-size: 100% auto;
