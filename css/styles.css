@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../assets/LEMONMILK-Bold.otf');
+  }
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+}
+main{
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-image: url('../assets/vector-grunge-background.jpg')
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    width: 1300px;
+}
+
+.continer__left{
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.container__right{
+  margin-top: -200px;
+  position: relative;
+  z-index: 2;
+}
+
+.birthday_letter{
+    width: 100%;
+    max-width: 750px;
+    top: 0;
+    animation: float 2s ease-in-out infinite;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
+    position: relative;
+}
+
+h1{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: 'Lemon Milk';
+    font-size: 43px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+span{
+  font-size: 68px;
+  font-weight: 800;
+  transition: all 1s;
+  color: #050150;
+  cursor: pointer;
+}
+span:hover{
+color: salmon;
+}
+
+video{
+    width: auto;
+    height: 70vh;
+}
+
+.open-modal{
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Lemon Milk';
+  margin: 0rem 0 3rem 0;
+  cursor: pointer;
+  background-color: #0056b8;
+  color: white;
+  border-radius: 70px ;
+  transition:  all .5s;
+  letter-spacing: 1px;
+  font-weight: 300;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+  
+  
+}
+button.shake{
+  animation: shake .5s 1;
+}
+
+.open-modal:hover{
+  background-color: #bc2005;
+  animation-play-state: paused;
+
+}
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+    z-index: 2;
+  }
+  
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal-dialog {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 80vh;
+    max-height: 80vh;
+    border-radius: 5px;
+    background:transparent;
+    overflow: hidden;
+  }
+  
+  .modal-dialog > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-header{
+    background: transparent;
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .modal-header .close-modal {
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+    
+  
+  /* Animaciones */
+  [data-animation] .modal-dialog {
+    opacity: 0;
+    transition: all 0.5s var(--bounceEasing);
+  }
+  
+  [data-animation].is-visible .modal-dialog {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  
+  [data-animation="slideInOutLeft"] .modal-dialog {
+    transform: translateX(-100%);
+  }
+  
+  [data-animation="slideInOutLeft"].is-visible .modal-dialog{
+    transform: none;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); background-color: #bc2005;}
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg);}
+  }
+
+  .foto{
+    position: absolute;
+    width: calc(100% - 107px);
+    animation: float 2s ease-in-out infinite;
+    left: calc(50% - ((100% - 100px)/2));
+    top: 11vh;
+    border-radius: 100%;
+  }
+  
+  @media(min-width: 750px){
+    .foto{
+      max-width: calc(750px - 210px);
+      left: calc(50% - 280px);
+    }
+  }
+
+  @media(max-width: 750px){
+    .foto{
+      top: 6vh;
+    }
+  }
+
+.mapa{
+  text-align: center;
+  padding-top: 3rem;
+}
+#modal1 .modal-dialog{
+  overflow: auto;
+}
+.modal-dialog::-webkit-scrollbar {
+  width: 0px;
+}
+.itinerario{
+  height:1416px;
+  width: 100%;
+  background-image: url('../assets/itinerario.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.letrero{
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mensaje{
+  position: relative;
+  z-index: 2;
+  margin-top: -160px;
+  padding: 0 2rem;
+}
+.botones{
+  position: relative;
+  z-index: 2;
+}
