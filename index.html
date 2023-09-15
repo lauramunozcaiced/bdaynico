@@ -21,43 +21,47 @@
         <div class="foto birthday_letter"></div>
     </div>
     
-    <div class="mensaje"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>  
+    <div class="mensaje"><p>Cumplir años es motivo de recordar lo que hemos sido, lo que hemos recorrido y todo lo que hemos alcanzado por esto es una celebración. Celebrar tu vida es celebrar también la alegría, la pasión, la espontaneidad, la amabilidad, la empatía del mundo. <br><br>
+      Como los frutos, cada vez que el sol vuelve adonde estuvo cuando nacimos, nos acercarnos más a ese punto que concentra toda su dulzura y su capacidad nutricia.</p></div>  
     <div class="botones">
             
             
             <div class="mapa">
-              <button id="modal-buton" type="button" class="open-modal b b1" data-open="modal1">
+              <button id="modal-buton" type="button" class="open-modal b b1" data-open="modalIt">
+                Itinerario
+              </button><br>
+              <button id="modal-buton" type="button" class="open-modal b b1" data-open="modalVid">
+                Video
+              </button><br>
+              <button id="modal-buton" type="button" class="open-modal b b1" data-open="modal" data-number="0">
                 #1
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b2" data-open="modal2">
+              <button id="modal-buton" type="button" class="open-modal b b2" data-open="modal" data-number="1">
                 #2
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b3" data-open="modal3">
+              <button id="modal-buton" type="button" class="open-modal b b3" data-open="modal" data-number="2">
                 #3
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b4" data-open="modal4">
+              <button id="modal-buton" type="button" class="open-modal b b4" data-open="modal" data-number="3">
                 #4
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b5" data-open="modal5">
+              <button id="modal-buton" type="button" class="open-modal b b5" data-open="modal" data-number="4">
                 #5
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b6" data-open="modal6">
+              <button id="modal-buton" type="button" class="open-modal b b6" data-open="modal" data-number="5">
                 #6
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b7" data-open="modal7">
+              <button id="modal-buton" type="button" class="open-modal b b7" data-open="modal" data-number="6">
                 #7
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b8" data-open="modal8">
+              <button id="modal-buton" type="button" class="open-modal b b8" data-open="modal"data-number="7">
                 #8
               </button>
-              <button id="modal-buton" type="button" class="open-modal b b9" data-open="modal9">
+              <button id="modal-buton" type="button" class="open-modal b b9" data-open="modal" data-number="8">
                 #9
               </button>
             </div>
-            <div class="modal" id="modal1" data-animation="slideInOutLeft">
+            <div class="modal" id="modalIt" data-animation="slideInOutLeft">
               <div class="modal-dialog">
                 <div class="modal-header">
                   <button class="close-modal" aria-label="close modal" data-close>
@@ -72,7 +76,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal" id="modal2" data-animation="slideInOutLeft">
+            <div class="modal" id="modalVid" data-animation="slideInOutLeft">
                 <div class="modal-dialog">
                   <div class="modal-header">
                     <button class="close-modal" aria-label="close modal" data-close>
@@ -87,7 +91,18 @@
                   </div>
                 </div>
               </div>
-
+              <div class="modal" id="modal" data-animation="slideInOutLeft">
+                <div class="modal-dialog">
+                  <div class="modal-header">
+                    <button class="close-modal" aria-label="close modal" data-close>
+                      ✕  
+                    </button>
+                </div>
+                  <div class="modal-body">
+                    <p id="question"></p>                   
+                  </div>
+                </div>
+              </div>
             
         </div>
         

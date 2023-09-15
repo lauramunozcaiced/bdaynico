@@ -270,10 +270,14 @@ button.shake{
 .mensaje{
   position: relative;
   z-index: 2;
-  margin-top: -160px;
+  margin-top: -130px;
   padding: 0 2rem;
 }
 .botones{
   position: relative;
   z-index: 2;
+}
+#modal .modal-body p{
+  padding: 1rem 0.5rem;
+  background-color: white;
 }
